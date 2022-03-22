@@ -38,7 +38,7 @@ export const MintInfo = ({ candyMachine }: HeaderProps) => {
               color="textPrimary"
               style={{ fontWeight: 'bold' }}
             >
-              {getMintPrice(candyMachine)}
+              ◎ 0.88
             </Typography>
           </Grid>
           <MintCountdown
@@ -62,13 +62,4 @@ export const MintInfo = ({ candyMachine }: HeaderProps) => {
       )}
     </>
   )
-}
-
-const getMintPrice = (candyMachine: CandyMachineAccount): string => {
-  const price = formatNumber.asNumber(
-    candyMachine.state.isPresale
-      ? candyMachine.state.whitelistMintSettings?.discountPrice!
-      : candyMachine.state.price!
-  )
-  return `◎ ${price}`
 }
