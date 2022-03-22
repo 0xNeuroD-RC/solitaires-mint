@@ -3,7 +3,7 @@ import * as anchor from '@project-serum/anchor'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import { MintCountdown } from './MintCountdown'
-import { toDate, formatNumber } from './utils'
+import { toDate } from './utils'
 import { CandyMachineAccount } from './candy-machine'
 
 type HeaderProps = {
