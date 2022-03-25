@@ -257,18 +257,18 @@ const Home = (props: HomeProps) => {
         <img className={classes.brand} src={brandLogo} alt="" />
         <div className={classes.navLinks}>
           <Button
-            href="https://solitaires-dao.io"
+            href="https://solitaire-dao.in"
             className={classes.navLinkItem}
             color="primary"
           >
             DAO
           </Button>
-            <a href="https://discord.gg/4NzpjHfU">
-              <i className={`${classes.icon} fa-2x fab fa-discord`} />
-            </a>
-            <a href="https://twitter.com/solitairesNFT">
-              <i className={`${classes.icon} fa-2x fab fa-twitter`} />
-            </a>
+          <a href="https://discord.gg/4NzpjHfU">
+            <i className={`${classes.icon} fa-2x fab fa-discord`} />
+          </a>
+          <a href="https://twitter.com/solitairesNFT">
+            <i className={`${classes.icon} fa-2x fab fa-twitter`} />
+          </a>
           {wallet.connected && <DisconnectButton>Disconnect</DisconnectButton>}
         </div>
       </nav>
@@ -282,7 +282,10 @@ const Home = (props: HomeProps) => {
           <Container maxWidth="xs" style={{ position: 'relative' }}>
             <Paper className={classes.paper}>
               {!wallet.connected ? (
-                <ConnectButton>Connect Wallet</ConnectButton>
+                // <ConnectButton>Connect Wallet</ConnectButton>
+                <Typography align="center" variant="h1">
+                  Coming Soon
+                </Typography>
               ) : (
                 <>
                   <MintInfo candyMachine={candyMachine} />
@@ -333,7 +336,10 @@ const Home = (props: HomeProps) => {
           </a>
         </div>
         <Typography className={classes.createdBy} color={`primary`}>
-          Created by <Link href="https://twitter.com/0xNeuroD">0xNeuroD <i className={`fab fa-twitter`} /></Link>
+          Created by{' '}
+          <Link href="https://twitter.com/SOLitairesNFT">
+            0xNewMoney <i className={`fab fa-twitter`} />
+          </Link>
         </Typography>
 
         <Snackbar
