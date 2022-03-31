@@ -282,10 +282,7 @@ const Home = (props: HomeProps) => {
           <Container maxWidth="xs" style={{ position: 'relative' }}>
             <Paper className={classes.paper}>
               {!wallet.connected ? (
-                // <ConnectButton>Connect Wallet</ConnectButton>
-                <Typography align="center" variant="h1">
-                  Coming Soon
-                </Typography>
+                <ConnectButton>Connect Wallet</ConnectButton>
               ) : (
                 <>
                   <MintInfo candyMachine={candyMachine} />

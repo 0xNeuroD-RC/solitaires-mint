@@ -38,7 +38,7 @@ export const MintInfo = ({ candyMachine }: HeaderProps) => {
               color="textPrimary"
               style={{ fontWeight: 'bold' }}
             >
-              ◎ 0.88
+              ◎ 0.099
             </Typography>
           </Grid>
           <MintCountdown
